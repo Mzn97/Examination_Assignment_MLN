@@ -1,10 +1,13 @@
 import styled from 'styled-components'
 
 const Box = styled.div`
-    width: 333px;
-    height: 400px;
-    background-color: #d8edd8;
-    border-radius: .5em;
+    width: 173.5px;
+    height: 390px;
+    background-color: #f5eeeef6;
+    border-radius: 5px;
+    margin:2.5em;
+    box-shadow: 5px 5px 5px grey;
+    text-align : center;
 
 `
 
