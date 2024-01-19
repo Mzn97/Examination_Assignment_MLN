@@ -76,3 +76,14 @@ button:focus-visible {
   box-shadow: 5px 5px 5px grey;
   text-align : center;
 }
+
+.categorycard{
+  width: 280px;
+  height: 280px;
+  background-color: #f5eeeef6;
+  border-radius: 5px;
+  margin:1.5em;
+  box-shadow: 5px 5px 5px grey;
+  text-align : center;
+
+}
