@@ -1,9 +1,8 @@
 
-
 function Card(){
     return (
         <div className="card">
-            <img src="" alt="shop image" height={250}></img>
+            <img src="src\img\photo-1676498111080-5b73b7f0122c.avif" alt="shop image" height={250}></img>
             <h2>Produkt Namn</h2>
             <p>Produkt pris</p>
             <button className='btn'>Buy</button>
