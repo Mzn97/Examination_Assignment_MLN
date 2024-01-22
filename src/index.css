@@ -69,12 +69,27 @@ button:focus-visible {
 
 
 .categorycard{
-  width: 280px;
-  height: 280px;
+  width: 310px;
+  height: 295px;
   background-color: #f5eeeef6;
   border-radius: 5px;
   margin:1.5em;
   box-shadow: 4px 4px 9px grey;
   text-align : center;
 
+}
+
+.category{
+  display: inline;
+  justify-content: center;
+
+}
+
+
+@media screen and (min-width: 600px){
+  .category{
+    display: flex;
+    justify-content: center;
+    
+  }
 }
