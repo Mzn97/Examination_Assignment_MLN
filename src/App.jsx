@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Home from "./pages/Home";
 import MyButton from "./components/MyButton";
 import Products from "./pages/Products"
+import HamburgerMenu from "./components/HamburgerMenu";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <div>
        <div className="app">
             <Router>
+                <HamburgerMenu />
                 <MyButton to="" name="" />
                 <MyButton to="products" name="products" />
                 <MyButton to="about" name="about"  /> 

@@ -1,0 +1,31 @@
+
+/* .menuButton {
+    här kan jag lägga till styling för knappen
+} */
+
+.menuContainer {
+    font-family: sans-serif;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100%;
+    background-color: #EFE0D9;
+    overflow: hidden;
+    transition: right 0.7s;
+}
+
+.menuContainerOpen {
+    right: 0;
+}
+
+.menuItem {
+    display: block;
+    color: #555;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.menuItem:hover {
+    background-color: #a39999;
+}
