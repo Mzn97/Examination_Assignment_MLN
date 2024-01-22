@@ -8,12 +8,17 @@ import Home from "./pages/Home";
 import MyButton from "./components/MyButton";
 import Products from "./pages/Products"
 import HamburgerMenu from "./components/HamburgerMenu";
+import ProductShoes from "./pages/ProductShoes";
+
 
 
 function App() {
+
+
   return (
     <div>
        <div className="app">
+
             <Router>
                 <HamburgerMenu />
                 <MyButton to="" name="" />
@@ -25,7 +30,10 @@ function App() {
                         element={<Products />} />
                     <Route path="/about"
                         element={<About />} />
+                        <Route path="/productshoes"
+                        element={<ProductShoes />} />
                 </Routes> }
+              
             </Router>
         </div> 
     </div>
