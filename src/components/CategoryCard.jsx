@@ -20,7 +20,7 @@ import MyButton from "./MyButton";
              <img src="src\img\photo-1536122985607-4fe00b283652.avif" alt="category img" height={240} width={310}></img>
              <MyButton to="About" name="Shoes" />
              
-            
+           
     
       
         </div>
