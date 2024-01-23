@@ -1,13 +1,12 @@
 import React from 'react';
 import Card from "/src/components/Card.jsx";
 import { useState, useEffect } from 'react'
-//P.js
+ 
 const ProductShoes = () => {
     const [productList, setProductList] = useState([])
 
     useEffect(() => {
-        // update update the list of todos
-        // when the component is rendered for the first time
+       
         addProducts();
       }, []);
 
@@ -17,7 +16,7 @@ const ProductShoes = () => {
           .then(prod => {
             setProductList(prod.data);
           })
-      }
+      }// sätt en catch ()
 
     return (
         

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styles from './HamburgerMenu.module.css'
 
+
 const HamburgerMenu = () => {
     const [isOpen, setIsOpen] = useState(false)
 
