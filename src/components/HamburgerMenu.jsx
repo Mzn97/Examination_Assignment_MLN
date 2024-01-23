@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import styles from './HamburgerMenu.module.css'
+import styles from '../style/HamburgerMenu.module.css'
 
 
 const HamburgerMenu = () => {
