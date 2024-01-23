@@ -13,8 +13,6 @@ import ProductShoes from "./pages/ProductShoes";
 
 
 function App() {
-
-
   return (
     <div>
        <div className="app">
@@ -24,14 +22,12 @@ function App() {
                 <MyButton to="" name="" />
                 <MyButton to="products" name="products" />
                 <MyButton to="about" name="about"  /> 
+
                 { <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/products/*"
-                        element={<Products />} />
-                    <Route path="/about"
-                        element={<About />} />
-                        <Route path="/productshoes"
-                        element={<ProductShoes />} />
+                    <Route path="/products/*" element={<Products />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/productshoes" element={<ProductShoes />} />
                 </Routes> }
               
             </Router>
