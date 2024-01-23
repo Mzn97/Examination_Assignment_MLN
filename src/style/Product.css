@@ -1,6 +1,8 @@
 
 
 .card {
+  
+    width: 333px;
     background-color:  #f5eeeef6;
     border-radius: 5px;
     margin:2.5em;
@@ -33,5 +35,11 @@
       justify-content: center;
       
     }
+  }
+
+  .productshoes{
+    display: flex;
+    flex-wrap: wrap;
+
   }
   
