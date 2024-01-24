@@ -1,18 +1,35 @@
 import { BrowserRouter as Router, Routes,Route} from "react-router-dom";
 import About from "./pages/About";
 import Home from "./pages/Home";
-import MyButton from "./components/MyButton";
+import Navbar from "./components/Navbar";
+/* import MyButton from "./components/MyButton"; */
 import Products from "./pages/Products"
-import HamburgerMenu from "./components/HamburgerMenu";
+/* import HamburgerMenu from "./components/HamburgerMenu"; */
 import ProductShoes from "./pages/ProductShoes";
 
 
 
 function App() {
+  
   return (
-    <div>
-       <div className="app">
+    <Router>
+        <Navbar />
+        <Routes>
+            <Route path="/Home" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/ProductShoes" element={<ProductShoes />} />
+            {/* Lägg till fler Routes efter behov */}
+        </Routes>
+      </Router>
+  )
+}
 
+export default App
+
+
+{/* <div>
+       <div className="app">
             <Router>
                 <HamburgerMenu />
                 <MyButton to="" name="" />
@@ -25,13 +42,6 @@ function App() {
                     <Route path="/about" element={<About />} />
                     <Route path="/productshoes" element={<ProductShoes />} />
                 </Routes> }
-              
             </Router>
         </div> 
-    </div>
-  )
-
-
-}
-
-export default App
+    </div> */}
