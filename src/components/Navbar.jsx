@@ -17,4 +17,4 @@ const Navbar = () => {
 
 export default Navbar;
 
-//Lägg Css till en --> module.css
+//Lägg den här Css till en --> module.css

@@ -2,11 +2,11 @@ import React, { useState } from 'react'
 import styles from '../style/HamburgerMenu.module.css'
 
 
-const HamburgerMenu = () => {
-    const [isOpen, setIsOpen] = useState(false)
+const HamburgerMenu = () => { 
+    const [isNavbarOpen, setNavbarOpen] = useState(false)
 
     const toggleMenu = () => {
-        setIsOpen(!isOpen)
+        setNavbarOpen(!isNavbarOpen)
     };
 
     return (
@@ -21,14 +21,17 @@ const HamburgerMenu = () => {
                 </svg>
             </button>
 
-            <div className={isOpen ? `${styles.menuContainer} ${styles.menuContainerOpen}` : styles.menuContainer}>
+            <div className={isNavbarOpen ? `${styles.menuContainer} ${styles.menuContainerOpen}` : styles.menuContainer}>
                 {/* här kan man lägga fler meny länkar, samma som under, lägga in efter navbar vid liten skärm? */}
-                <a href="#" className={styles.menuItem}>Shoes</a>
-                <a href="#" className={styles.menuItem}>Shirts</a>
-                <a href="#" className={styles.menuItem}>Footballs</a>
+                <a href="/ProductShoes" className={styles.menuItem}>Shoes</a>
+                <a href="/ProductShirts" className={styles.menuItem}>Shirts</a>
+                <a href="/ProductFootballs" className={styles.menuItem}>Footballs</a>
             </div>
         </div>
     );
 }
 
 export default HamburgerMenu
+
+
+//import styles from '../style/HamburgerMenu.module.css'
