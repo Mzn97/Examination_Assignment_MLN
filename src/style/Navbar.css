@@ -3,25 +3,40 @@
 }
 
 .navbar {
-    background-color:#ffffffd7;
+    background-color: #ffffffd7;
     padding: 10px;
     display: flex;
     justify-content: space-around;
 }
 
-.navbar-item {
+.navbar-text {
     display: flex;
+    align-items: center;
+    font-weight: 900;
+    font-family: sans-serif;
+    font-size: 26px; 
+    color: black;
+    padding: 5px 10px;
+}
+
+.navbar-item {
+    display: none;
     align-items: center;
     font-weight: 600;
     font-family: sans-serif;
-    font-size: 20px;
+    font-size: 20px; 
     color: black;
     text-decoration: none;
     padding: 5px 10px;
     border-radius: 10px;
-    
 }
 
 .navbar-item:hover {
     background-color: #eeeeee;
+}
+
+@media (min-width: 768px) {
+    .navbar-item {
+        display: flex;
+    }
 }

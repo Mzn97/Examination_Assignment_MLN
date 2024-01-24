@@ -29,3 +29,17 @@
 .menuItem:hover {
     background-color: #d9d4d4;
 }
+
+@media (min-width: 768px) {
+    .menu-button {
+        display: none; /* Dölj knappen */
+    }
+
+    .menuContainer {
+        display: none; /* Dölj även själva menyn */
+    }
+
+    .hamburgerMenuContainer {
+        display: none; /* Dölj hela hamburgermenyn inklusive loggan */
+    }
+}
