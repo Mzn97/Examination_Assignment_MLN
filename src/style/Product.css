@@ -7,7 +7,7 @@ button {
   font-family: inherit;
   background-color: #e4e0e0d3;
   cursor: pointer;
-  margin: 4px;
+  margin: 6px;
 }
 button:hover {
   border-color: #bbbbbc;
@@ -17,12 +17,16 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.my-button{
+  margin: 0.1em;
+}
+
 .card {
   
     width: 333px;
     background-color: #eeeeee;
     border-radius: 5px;
-    margin:2.5em;
+    margin:1.5em;
     box-shadow: 4px 4px 9px grey;
     text-align : center;
   }
@@ -45,15 +49,6 @@ button:focus-visible {
   
   }
   
-  
-  @media screen and (min-width: 600px){
-    .category{
-      display: flex;
-      justify-content: center;
-      
-    }
-  }
-
   .productshoes{
     display: flex;
     flex-wrap: wrap;
@@ -63,7 +58,8 @@ button:focus-visible {
   .productshirts{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+   
+    
   }
 
   .productfootballs{
@@ -71,3 +67,23 @@ button:focus-visible {
     flex-wrap: wrap;
     align-items: center;
   }
+
+
+  @media screen and (min-width: 600px){
+    .productshirts{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+
+  @media screen and (min-width: 600px){
+    .category{
+      display: flex;
+      justify-content: center;
+      
+    }
+  }
+  
