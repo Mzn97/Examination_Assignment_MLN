@@ -1,24 +1,42 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import styles from '../style/HamburgerMenu.module.css'
 
-
-const HamburgerMenu = () => { 
-    const [isNavbarOpen, setNavbarOpen] = useState(false)
+const HamburgerMenu = () => {
+    const [isNavbarOpen, setIsNavbarOpen] = useState(false)
+    // Skapa en ref för att hänvisa till menyn
+    const menuRef = useRef() 
 
     const toggleMenu = () => {
-        setNavbarOpen(!isNavbarOpen)
-    };
+        setIsNavbarOpen(!isNavbarOpen)
+    }
+
+    // Kollar om menyn finns, kontrollera vart användaren klickar, stäng menyn om klick sker utanför menyn.
+    useEffect(() => {
+        const handleClickOutsideMenu = (event) => {
+            if (menuRef.current && !menuRef.current.contains(event.target)) {
+                // Stäng menyn om klicket sker utanför (Det blir false)
+                setIsNavbarOpen(false) 
+            }
+        }
+
+        // Lägg till event listener som hanterar klicket utanför menyn
+        document.addEventListener('mousedown', handleClickOutsideMenu)
+
+        // Städa upp event listener, tar bort handleClickOutsideMenu event listener från document
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutsideMenu)
+        }
+    }, [menuRef])
 
     return (
-        <div>
+        <div ref={menuRef}>
             <button onClick={toggleMenu} className="menu-button">
-                {/* SVG-ikonen här */}
                 <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-menu-2" width="40" height="40" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#000000" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M4 6l16 0" />
-                    <path d="M4 12l16 0" />
-                    <path d="M4 18l16 0" />
-                </svg>
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M4 6l16 0" />
+                <path d="M4 12l16 0" />
+                <path d="M4 18l16 0" />
+            </svg>
             </button>
 
             <div className={isNavbarOpen ? `${styles.menuContainer} ${styles.menuContainerOpen}` : styles.menuContainer}>
@@ -28,10 +46,7 @@ const HamburgerMenu = () => {
                 <a href="/ProductFootballs" className={styles.menuItem}>Footballs</a>
             </div>
         </div>
-    );
+    )
 }
 
 export default HamburgerMenu
-
-
-//import styles from '../style/HamburgerMenu.module.css'
