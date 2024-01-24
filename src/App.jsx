@@ -6,6 +6,8 @@ import Navbar from "./components/Navbar";
 import Products from "./pages/Products"
 /* import HamburgerMenu from "./components/HamburgerMenu"; */
 import ProductShoes from "./pages/ProductShoes";
+import ProductShirts from "./pages/ProductShirts";
+import ProductFootballs from "./pages/ProduktFooballs";
 
 
 
@@ -19,6 +21,8 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/products" element={<Products />} />
             <Route path="/ProductShoes" element={<ProductShoes />} />
+            <Route path="/ProductShirts" element={<ProductShirts />} />
+            <Route path="/ProductFootballs" element={<ProductFootballs />} />
             {/* Lägg till fler Routes efter behov */}
         </Routes>
       </Router>

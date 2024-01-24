@@ -10,7 +10,7 @@ import MyButton from "./MyButton";
         
          <div className="categorycard">
              <img src="src\img\photo-1676498111080-5b73b7f0122c.avif" alt="category img" height={240} width={310}></img>
-             <MyButton to="ProductShoes" name="Shirts" />
+             <MyButton to="ProductShirts" name="Shirts" />
              
             
     
@@ -27,7 +27,7 @@ import MyButton from "./MyButton";
 
         <div className="categorycard">
              <img src="src\img\photo-1553778263-73a83bab9b0c.avif" alt="category img" height={240} width={310}></img>
-             <MyButton to="ProductShoes" name="Balls" />
+             <MyButton to="ProductFootballs" name="Footballs" />
              
             
     
