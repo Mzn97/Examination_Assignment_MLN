@@ -1,9 +1,26 @@
-
+button {
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #e4e0e0d3;
+  cursor: pointer;
+  margin: 4px;
+}
+button:hover {
+  border-color: #bbbbbc;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
 
 .card {
   
     width: 333px;
-    background-color:  #f5eeeef6;
+    background-color: #eeeeee;
     border-radius: 5px;
     margin:2.5em;
     box-shadow: 4px 4px 9px grey;
@@ -14,7 +31,7 @@
   .categorycard{
     width: 310px;
     height: 295px;
-    background-color: #f5eeeef6;
+    background-color: #eeeeee;
     border-radius: 5px;
     margin:1.5em;
     box-shadow: 4px 4px 9px grey;
@@ -40,6 +57,17 @@
   .productshoes{
     display: flex;
     flex-wrap: wrap;
-
+    align-items: center;
   }
   
+  .productshirts{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .productfootballs{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }

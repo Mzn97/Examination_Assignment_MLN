@@ -10,7 +10,7 @@
     right: -100%;
     width: 250px;
     height: 100%;
-    background-color: #EFE0D9;
+    background-color: #eeeeee;
     overflow: hidden;
     transition: right 0.7s;
 }
@@ -21,11 +21,11 @@
 
 .menuItem {
     display: block;
-    color: #555;
+    color: #959292;
     padding: 16px;
     text-decoration: none;
 }
 
 .menuItem:hover {
-    background-color: #a39999;
+    background-color: #d9d4d4;
 }
