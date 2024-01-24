@@ -12,13 +12,14 @@ button {
 button:hover {
   border-color: #bbbbbc;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+
 
 .my-button{
-  margin: 0.1em;
+  margin: 0.em;
+}
+
+.my-button:hover {
+  border-color: #bbbbbc;
 }
 
 .card {
@@ -33,11 +34,11 @@ button:focus-visible {
   
   
   .categorycard{
-    width: 310px;
-    height: 295px;
+    width: 360px;
+    height: 320px;
     background-color: #eeeeee;
     border-radius: 5px;
-    margin:1.5em;
+    margin: .5em;
     box-shadow: 4px 4px 9px grey;
     text-align : center;
   
@@ -83,7 +84,15 @@ button:focus-visible {
     .category{
       display: flex;
       justify-content: center;
+      margin: 8em;
       
+    }
+  }
+
+  
+  @media screen and (min-width: 600px){
+    .categorycard{
+      margin: 2.5em;
     }
   }
   
