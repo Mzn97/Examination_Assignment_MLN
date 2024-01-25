@@ -11,10 +11,11 @@ const ProductFootballs = () => {
       }, []);
 
       function addProducts() {
-        fetch(`http://localhost:1337/api/products`)
+        fetch(`http://localhost:1337/api/categories/2?populate[products][populate]=*`)
           .then(res => res.json())
           .then(prod => {
-            setProductList(prod.data);
+            console.log(prod.data.attributes.products.data);
+            setProductList(prod.data.attributes.products.data);
           })
       }// sätt en catch ()
 
