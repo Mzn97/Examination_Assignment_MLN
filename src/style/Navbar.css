@@ -10,6 +10,7 @@
 }
 
 .navbar-text {
+    /* text-decoration: none; */ /* ska den finnas ?? */
     display: flex;
     align-items: center;
     font-weight: 900;
@@ -18,6 +19,12 @@
     color: black;
     padding: 5px 10px;
 }
+
+.navbar-text:hover {
+    background-color: #f0f0f0;  /* KOLLA DENNA */
+    border-radius: 15px;
+}
+
 
 .navbar-item {
     display: none;
@@ -39,4 +46,8 @@
     .navbar-item {
         display: flex;
     }
+
+    /* .navbar-text {
+        text-decoration: none;
+    } */
 }

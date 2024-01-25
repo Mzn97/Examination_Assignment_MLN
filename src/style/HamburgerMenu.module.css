@@ -1,14 +1,25 @@
+.menuButton {
+    /* Lägg till styling för knappen här */
+    background: none;
+    border: none;
+    padding: 8px;
+}
 
-/* .menuButton {
-    här kan jag lägga till styling för knappen
-} */
+.menuButton:hover {
+    background-color: #f0f0f0;
+}
+
+.icon {
+    width: 50px; 
+    height: 50px;
+}
 
 .menuContainer {
     font-family: sans-serif;
     position: fixed;
     top: 0;
     right: -100%;
-    width: 250px;
+    width: 160px;
     height: 100%;
     background-color: #eeeeee;
     overflow: hidden;
@@ -32,14 +43,14 @@
 
 @media (min-width: 768px) {
     .menu-button {
-        display: none; /* Dölj knappen */
+        display: none;
     }
 
     .menuContainer {
-        display: none; /* Dölj även själva menyn */
+        display: none; 
     }
 
     .hamburgerMenuContainer {
-        display: none; /* Dölj hela hamburgermenyn inklusive loggan */
+        display: none; 
     }
 }

@@ -15,7 +15,7 @@ const Navbar = () => {
             </svg>
 
             </div>
-                <p className="navbar-text">MLNK</p>  {/* GÖR TILL EN LÄNK SOM TAR EN TILL HOME */}
+                <Link to="/home" className="navbar-text">MLNK</Link>
                 <Link to="/Home" className="navbar-item">Home</Link>
                 <Link to="/about" className="navbar-item">About us</Link>
                 <Link to="/products" className="navbar-item">Products</Link>
