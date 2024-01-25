@@ -3,7 +3,7 @@ function Card(prop){
     console.log(prop);
     return (
         <div className="card">
-            <img src="src\img\photo-1676498111080-5b73b7f0122c.avif" alt="shop image" height={250}></img>
+            <img src={'http://localhost:1337' + prop.prod.attributes.image.data.attributes.url} alt="shop" height={250}></img>
             <h2>{prop.prod.attributes.title}</h2>
             <p>{prop.prod.attributes.price} :-</p>
             <button className='btn'>Buy</button>
@@ -13,3 +13,7 @@ function Card(prop){
 }
 
 export default Card
+
+
+
+//http://localhost:1337"$ till image
