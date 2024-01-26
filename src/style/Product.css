@@ -32,6 +32,11 @@ button:hover {
     margin-bottom: 2em;
     box-shadow: 4px 4px 9px grey;
     text-align : center;
+    transition: .1s
+  }
+
+  .card:hover{
+    transform: scale(1.1);
   }
   
   
@@ -61,15 +66,9 @@ button:hover {
   @media screen and (min-width: 600px){
     .card{
       margin-left:2.5em;
-      transition: .1s
     }
   }
 
-  @media screen and (min-width: 600px){
-    .card:hover{
-      transform: scale(1.1);
-    }
-  }
 
   @media screen and (min-width: 600px){
     .products{
