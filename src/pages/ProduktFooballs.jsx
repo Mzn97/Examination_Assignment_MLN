@@ -21,8 +21,8 @@ const ProductFootballs = () => {
 
     return (
         
-        <div className="productfootballs">
-            <h1>This is the productfootballs page</h1>
+        <div className="products">
+            <h1 className='pagetitle'>FOOTBALLS</h1>
             {
                 productList.map((prod, i) => {
                   return <Card prod={prod} key={i} />

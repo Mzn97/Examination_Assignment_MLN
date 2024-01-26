@@ -5,7 +5,7 @@ const Products = () => {
     return (
         
         <div className="products">
-            <h1>This is the product page</h1>
+            <h1 className='pagetitle'>PRODUCTS</h1>
             <CategoryCard />
         </div>
     )
