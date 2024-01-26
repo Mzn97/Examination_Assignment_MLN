@@ -6,11 +6,11 @@ import Products from "./pages/Products"
 import ProductShoes from "./pages/ProductShoes";
 import ProductShirts from "./pages/ProductShirts";
 import ProductFootballs from "./pages/ProduktFooballs";
+import ShoppingCart from "./components/ShoppingCart";
 
 
 
 function App() {
-  
   return (
     <Router>
         <Navbar />
@@ -21,6 +21,7 @@ function App() {
             <Route path="/ProductShoes" element={<ProductShoes />} />
             <Route path="/ProductShirts" element={<ProductShirts />} />
             <Route path="/ProductFootballs" element={<ProductFootballs />} />
+            <Route path="/ShoppingCart" element={<ShoppingCart />} />
             {/* Lägg till fler Routes efter behov */}
         </Routes>
       </Router>
