@@ -6,7 +6,8 @@ import Products from "./pages/Products"
 import ProductShoes from "./pages/ProductShoes";
 import ProductShirts from "./pages/ProductShirts";
 import ProductFootballs from "./pages/ProduktFooballs";
-import ShoppingCart from "./components/ShoppingCart";
+import ShoppingCart from "./pages/ShoppingCart";
+import Checkout from "./pages/Checkout";
 
 
 
@@ -22,6 +23,7 @@ function App() {
             <Route path="/ProductShirts" element={<ProductShirts />} />
             <Route path="/ProductFootballs" element={<ProductFootballs />} />
             <Route path="/ShoppingCart" element={<ShoppingCart />} />
+            <Route path="/Checkout" element={<Checkout />} />
             {/* Lägg till fler Routes efter behov */}
         </Routes>
       </Router>
