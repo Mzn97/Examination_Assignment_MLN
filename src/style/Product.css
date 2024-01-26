@@ -61,6 +61,13 @@ button:hover {
   @media screen and (min-width: 600px){
     .card{
       margin-left:2.5em;
+      transition: .1s
+    }
+  }
+
+  @media screen and (min-width: 600px){
+    .card:hover{
+      transform: scale(1.1);
     }
   }
 
@@ -68,6 +75,8 @@ button:hover {
     .products{
       display: flex;
       flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
       
     }
   }
@@ -83,14 +92,6 @@ button:hover {
     }
   }
 
-  @media screen and (min-width: 600px){
-    .productshirts{
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-    }
-  }
 
 
   @media screen and (min-width: 600px){
@@ -109,3 +110,10 @@ button:hover {
     }
   }
   
+
+  /*transition: .2s;
+  
+  :hover {
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1); */
