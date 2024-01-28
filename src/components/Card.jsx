@@ -1,19 +1,36 @@
+import React, { useState } from 'react';
 
-function Card(prop){
-    console.log(prop);
+function Card({ prod }) {
+    const [showDescription, setShowDescription] = useState(false);
+
+    const toggleDescription = () => {
+        setShowDescription(!showDescription);
+    };
+
     return (
         <div className="card">
-            <img src={'http://localhost:1337' + prop.prod.attributes.image.data.attributes.url} alt="shop" height={290} width={233}></img>
-            <h2>{prop.prod.attributes.title}</h2>
-            <p>{prop.prod.attributes.price} :-</p>
-            <button className='btn'>Buy</button>
+        <div  onClick={toggleDescription}>
+            {showDescription ? (
+                
+                <div className="description">
+                      <h2>{prod.attributes.title}</h2>
+                        <p>{prod.attributes.price} :-</p><hr></hr>
+                    <p>{prod.attributes.description}</p>
+                   
+                </div>
+            ) : (
+                <>
+                    <img src={'http://localhost:1337' + prod.attributes.image.data.attributes.url} alt="shop" height={290} width={233} />
+                    <div>
+                        <h2>{prod.attributes.title}</h2>
+                        <p>{prod.attributes.price} :-</p>  
+                    </div> 
+                </>
+            )}
+        </div>
+        <button className='btn'>Buy</button>
         </div>
     );
-
 }
 
-export default Card
-
-
-
-//http://localhost:1337"$ till image
+export default Card;

@@ -37,6 +37,7 @@ button:hover {
 
   .card:hover{
     transform: scale(1.1);
+    cursor: pointer;
   }
   
   
@@ -109,10 +110,8 @@ button:hover {
     }
   }
   
+  .description{
+    margin: 1em;
+    font-size: smaller;
+  }
 
-  /*transition: .2s;
-  
-  :hover {
-        -ms-transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1); */
