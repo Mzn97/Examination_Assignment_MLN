@@ -53,7 +53,7 @@ const Footer = () => {
           <div style={{ flex: 1 }}>
             <h4>Contact</h4>
             <p>Email: info@MLNK.com</p>
-            <p>Phone: +123 456 789</p>
+            <p>Phone: +223 456 789</p>
           </div>
         </div>
 
