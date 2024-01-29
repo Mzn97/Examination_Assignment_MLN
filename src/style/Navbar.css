@@ -7,6 +7,7 @@
     padding: 10px;
     display: flex;
     justify-content: space-around;
+    text-decoration: none;
 }
 
 .navbar-text {
@@ -39,7 +40,11 @@
 }
 
 .navbar-item:hover {
-    background-color: #eeeeee;
+    background-color: #f0f0f0;
+}
+
+.cart-container svg:hover {
+    background-color: #f0f0f0;
 }
 
 @media (min-width: 768px) {
@@ -47,7 +52,4 @@
         display: flex;
     }
 
-    /* .navbar-text {
-        text-decoration: none;
-    } */
 }

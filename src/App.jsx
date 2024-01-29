@@ -10,6 +10,7 @@ import ProductFootballs from "./pages/ProduktFooballs";
 import ShoppingCart from "./pages/ShoppingCart";
 import Checkout from "./pages/Checkout";
 import Footer from "./components/Footer";
+import PurchaseConfirmation from './pages/PurchaseConfirmation';
 
 
 function App() {
@@ -25,11 +26,11 @@ function App() {
         <Route path="/ProductFootballs" element={<ProductFootballs />} />
         <Route path="/ShoppingCart" element={<ShoppingCart />} />
         <Route path="/Checkout" element={<Checkout />} />
-        {/* Lägg till fler Routes efter behov */}
+        <Route path="/purchase-confirmation" element={<PurchaseConfirmation />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </Router>
-  );
+  )
 }
 
 export default App;

@@ -1,0 +1,19 @@
+.confirmation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    padding: 20px;
+    text-align: center;
+}
+
+.confirmation-container h2 {
+    color: #4caf50;
+    margin-bottom: 20px;
+}
+
+.confirmation-container p {
+    color: #333;
+    font-size: 1.2em;
+}

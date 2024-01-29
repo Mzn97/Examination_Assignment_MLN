@@ -2,31 +2,36 @@ import React, { useState, useEffect, useRef } from 'react'
 import styles from '../style/HamburgerMenu.module.css'
 
 const HamburgerMenu = () => {
+    // State för att hantera om menyn är öppen eller stängd
     const [isNavbarOpen, setIsNavbarOpen] = useState(false)
-    // Skapa en ref för att hänvisa till menyn
+
+    // useRef används för att referera till HTML-element. Här används det för att spåra menyns div
     const menuRef = useRef() 
 
+    // Toggle-funktion för att öppna eller stänga menyn
     const toggleMenu = () => {
         setIsNavbarOpen(!isNavbarOpen)
     }
 
-    // Kollar om menyn finns, kontrollera vart användaren klickar, stäng menyn om klick sker utanför menyn.
+    // useEffect-hook för att lägga till logik som körs efter rendering.
     useEffect(() => {
+        // Funktion för att hantera klick utanför menyn
         const handleClickOutsideMenu = (event) => {
+            // Kontrollerar om klicket inte är inom menyns div
             if (menuRef.current && !menuRef.current.contains(event.target)) {
-                // Stäng menyn om klicket sker utanför (Det blir false)
+                // Stänger menyn om klicket är utanför
                 setIsNavbarOpen(false) 
             }
         }
 
-        // Lägg till event listener som hanterar klicket utanför menyn
+        // Lägger till event listener för att lyssna efter mousedown händelser
         document.addEventListener('mousedown', handleClickOutsideMenu)
 
-        // Städa upp event listener, tar bort handleClickOutsideMenu event listener från document
+        // Städa upp: Tar bort event listener när komponenten inte längre visas
         return () => {
             document.removeEventListener('mousedown', handleClickOutsideMenu)
         }
-    }, [menuRef])
+    }, [menuRef]) // Dependency array: useEffect körs om menuRef ändras
 
     return (
         <div ref={menuRef}>
@@ -42,10 +47,11 @@ const HamburgerMenu = () => {
             </div>
 
             <div className={isNavbarOpen ? `${styles.menuContainer} ${styles.menuContainerOpen}` : styles.menuContainer}>
-                {/* här kan man lägga fler meny länkar, samma som under, lägga in efter navbar vid liten skärm? */}
                 <a href="/ProductShoes" className={styles.menuItem}>Shoes</a>
                 <a href="/ProductShirts" className={styles.menuItem}>Shirts</a>
                 <a href="/ProductFootballs" className={styles.menuItem}>Footballs</a>
+                {/* Ska andra läggas till eller tas bort????????? */}
+                <a href="/About" className={styles.menuItem}>About us</a>
             </div>
         </div>
     )

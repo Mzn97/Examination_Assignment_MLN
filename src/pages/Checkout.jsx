@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import '../style/Checkout.css'
+import { useNavigate } from 'react-router-dom';
 
 const Checkout = () => {
-    // Skapar ett formulärdata objekt med hjälp av useState. Till en början är alla fälten tomma
-    // Först är formData tomt, sen när formData fylls i --> setFormData
+    // useState hook används för att hantera formulärdata.
+    // Initierar en state-variabel 'formData' med ett objekt som innehåller tomma strängar för varje fält.
     const [formData, setFormData] = useState({
         email: "",
         phone: "", 
@@ -15,31 +16,31 @@ const Checkout = () => {
         expiryDate: "",
         cvv: "",
     })
+    const navigate = useNavigate()
 
-    // Används för att uppdatera formData när användaren fyller i något i input fälten
-    // event.target.name riktar sig till name attributet i HTML koden och används som länken för att uppdatera rätt fält
-    // Som i sin tur skickar det användaren matar in till event.target.value och sparas
-    // spreadingen ()...formData) kopierar de befintliga värdena så att tidigare data inte blir förlorad
-    // Till sist används setFormData för att uppdatera formData med det användaren har matat in
+    // handleChange uppdaterar formData när användaren skriver i ett inputfält.
+    // Varje fält identifieras med 'name' och uppdateras med det nya värdet.
     const handleChange = (event) => {
         setFormData({
-            ...formData,
+            ...formData, // Kopierar befintliga data i state
             [event.target.name]: event.target.value,
         })
     }
 
-    // Denna ska ändras så att man kommer till en sida som  säger att köpet är genomfört
+    // handleSubmit körs när formuläret skickas.
+    // Den förhindrar sidans standarduppdatering och navigerar sedan till bekräftelsesidan.
     const handleSubmit = (event) => {
-        event.preventDefault()
-        console.log('Form Data:', formData)
-        alert('Tack för din beställning!')
+        event.preventDefault() // Förhindrar default beteende
+        console.log('Form Data:', formData) // Loggar formulärdata
+        navigate('/purchase-confirmation') // Omdirigerar till köpbekräftelsesidan
     }
 
     return (
         <div className="checkout-form">
             <h2>Checkout</h2>
-
-            {/* Hänvisar till funktionen ovan och öppnar alert fönstret när användaren trycker på "genomför köp" */}
+            {/* Varje inputfält är bundet till ett specifikt värde i formData och uppdateras via handleChange */}
+            {/* "name"-attributet i varje input matchar en nyckel i formData */}
+            {/* Hänvisar till funktionen "handleSubmit" när användaren kllickar på genomför köp, eftersom den är kopplad till onSubmit */}
             <form onSubmit={handleSubmit}>
                 <h3>Kontaktinformation</h3>
                 <input
@@ -48,7 +49,7 @@ const Checkout = () => {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="E-postadress"
-                    required
+                    /* required */
                 />
                 <input
                     type="tel"
@@ -56,7 +57,7 @@ const Checkout = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     placeholder="Telefonnummer"
-                    required
+                    /* required */
                 />
 
                 <h3>Leveransadress</h3>
@@ -66,7 +67,7 @@ const Checkout = () => {
                     value={formData.name}
                     onChange={handleChange}
                     placeholder="Fullständigt namn"
-                    required
+                    /* required */
                 />
                 <input
                     type="text"
@@ -74,7 +75,7 @@ const Checkout = () => {
                     value={formData.address}
                     onChange={handleChange}
                     placeholder="Adress"
-                    required
+                    /* required */
                 />
                 <input
                     type="text"
@@ -82,7 +83,7 @@ const Checkout = () => {
                     value={formData.city}
                     onChange={handleChange}
                     placeholder="Stad"
-                    required
+                    /* required */
                 />
                 <input
                     type="text"
@@ -90,7 +91,7 @@ const Checkout = () => {
                     value={formData.zip}
                     onChange={handleChange}
                     placeholder="Postnummer"
-                    required
+                    /* required */
                 />
 
                 <h3>Betalningsinformation</h3>
@@ -100,7 +101,7 @@ const Checkout = () => {
                     value={formData.cardNumber}
                     onChange={handleChange}
                     placeholder="Kortnummer"
-                    required
+                    /* required */
                 />
                 <input
                     type="text"
@@ -108,7 +109,7 @@ const Checkout = () => {
                     value={formData.expiryDate}
                     onChange={handleChange}
                     placeholder="Utgångsdatum MM/ÅÅ"
-                    required
+                    /* required */
                 />
                 <input
                     type="text"
@@ -116,7 +117,7 @@ const Checkout = () => {
                     value={formData.cvv}
                     onChange={handleChange}
                     placeholder="CVV"
-                    required
+                    /* required */
                 />
                 <button type="submit">Genomför köp</button>
             </form>
