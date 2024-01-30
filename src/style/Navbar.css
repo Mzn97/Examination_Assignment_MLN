@@ -44,10 +44,13 @@
     stroke: #e4e0e0d3;
 }
 
-
 @media (min-width: 768px) {
     .navbar-item {
         display: flex;
+    }
+
+    .icon.icon-tabler.icon-tabler-shopping-cart {
+        display: none;
     }
 
 }
