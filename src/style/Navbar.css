@@ -39,13 +39,11 @@
     border-radius: 10px;
 }
 
-.navbar-item:hover {
-    background-color: #f0f0f0;
+.navbar-item:hover, .cart-container svg:hover{
+    color: #e4e0e0d3;
+    stroke: #e4e0e0d3;
 }
 
-.cart-container svg:hover {
-    background-color: #f0f0f0;
-}
 
 @media (min-width: 768px) {
     .navbar-item {
