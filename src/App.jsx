@@ -1,4 +1,5 @@
 // App.jsx
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./pages/About";
 import Home from "./pages/Home";
@@ -12,21 +13,21 @@ import Checkout from "./pages/Checkout";
 import Footer from "./components/Footer";
 import PurchaseConfirmation from './pages/PurchaseConfirmation';
 
-
 function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/Home" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/ProductShoes" element={<ProductShoes />} />
-        <Route path="/ProductShirts" element={<ProductShirts />} />
-        <Route path="/ProductFootballs" element={<ProductFootballs />} />
-        <Route path="/ShoppingCart" element={<ShoppingCart />} />
-        <Route path="/Checkout" element={<Checkout />} />
-        <Route path="/purchase-confirmation" element={<PurchaseConfirmation />} />
+          <Route path="/" element={<Home />} />
+          {/*Använder '/' som sökväg för hemsidan istället för "/Home" för att få slideshow att fungera*/}
+          <Route path="/about" element={<About />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/ProductShoes" element={<ProductShoes />} />
+          <Route path="/ProductShirts" element={<ProductShirts />} />
+          <Route path="/ProductFootballs" element={<ProductFootballs />} />
+          <Route path="/ShoppingCart" element={<ShoppingCart />} />
+          <Route path="/Checkout" element={<Checkout />} />
+          <Route path="/purchase-confirmation" element={<PurchaseConfirmation />} />
       </Routes>
       {/* <Footer /> */}
     </Router>
