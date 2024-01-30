@@ -42,84 +42,97 @@ const Checkout = () => {
             {/* "name"-attributet i varje input matchar en nyckel i formData */}
             {/* Hänvisar till funktionen "handleSubmit" när användaren kllickar på genomför köp, eftersom den är kopplad till onSubmit */}
             <form onSubmit={handleSubmit}>
-                <h3>Kontaktinformation</h3>
+                <h3>Contact Information</h3>
                 <input
                     type="email"
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    placeholder="E-postadress"
+                    placeholder="Email Address"
+                    autoComplete="email"
                     /* required */
                 />
+
                 <input
                     type="tel"
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    placeholder="Telefonnummer"
+                    placeholder="Phone Number"
+                    autoComplete="tel"
                     /* required */
                 />
 
-                <h3>Leveransadress</h3>
+                <h3>Delivery Address</h3>
                 <input
                     type="text"
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    placeholder="Fullständigt namn"
+                    placeholder="Full Name"
+                    autoComplete="name"
                     /* required */
                 />
+
                 <input
                     type="text"
                     name="address"
                     value={formData.address}
                     onChange={handleChange}
-                    placeholder="Adress"
+                    placeholder="Address"
+                    autoComplete="address"
                     /* required */
                 />
+
                 <input
                     type="text"
                     name="city"
                     value={formData.city}
                     onChange={handleChange}
-                    placeholder="Stad"
+                    placeholder="City"
                     /* required */
                 />
+
                 <input
                     type="text"
                     name="zip"
                     value={formData.zip}
                     onChange={handleChange}
-                    placeholder="Postnummer"
+                    placeholder="Postal Code"
                     /* required */
                 />
 
-                <h3>Betalningsinformation</h3>
+                <h3>Payment Information</h3>
                 <input
                     type="text"
                     name="cardNumber"
                     value={formData.cardNumber}
                     onChange={handleChange}
-                    placeholder="Kortnummer"
+                    placeholder="Card Number"
+                    autoComplete="cc-number"
                     /* required */
                 />
+
                 <input
                     type="text"
                     name="expiryDate"
                     value={formData.expiryDate}
                     onChange={handleChange}
-                    placeholder="Utgångsdatum MM/ÅÅ"
+                    placeholder="Expiration Date MM/YY"
+                    autoComplete="cc-exp"
                     /* required */
                 />
+
                 <input
                     type="text"
                     name="cvv"
                     value={formData.cvv}
                     onChange={handleChange}
                     placeholder="CVV"
+                    autoComplete="cc-csc"
                     /* required */
                 />
-                <button type="submit">Genomför köp</button>
+                <button type="submit">Complete Purchase</button>
             </form>
         </div>
     )

@@ -4,8 +4,8 @@ import '../style/PurchaseConfirmation.css'
 const PurchaseConfirmation = () => {
     return (
         <div className='confirmation-container'>
-            <h2>Köpet genomfört</h2>
-            <p>Tack för ditt köp! Din beställning bearbetas.</p>
+            <h2>Purchase Completed</h2>
+            <p>Thank you for your purchase! Your order is being processed.</p>
         </div>
     );
 }
