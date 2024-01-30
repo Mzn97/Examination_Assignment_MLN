@@ -5,7 +5,7 @@ const ShoppingCart = () => {
     return(
         <div>
             <h1>KUNDKORG TEST</h1>
-            <a href="src/components/ShoppingCartC.jsx"><button>Go to Checkout</button></a>
+            <a href="/checkout"><button>Go to Checkout</button></a>
             {/*Behövs att fixas!! Pop-up ska komma upp istället för en hel sida*/}
         </div>
     )
