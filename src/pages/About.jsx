@@ -17,6 +17,7 @@ const About = () => {
                         Whether you're a seasoned player or a devoted fan, MLNK is your gateway to soccer excellence. Join us in embracing the spirit of the game, where every purchase is a step closer to realizing your soccer dreams. Welcome to MLNK – where the love for soccer meets unparalleled quality!
                     </p>
                 </div>
+                <a href="/ContactUs"><button>Go to Contact Us</button></a>
             </div>
         </div>
     );
