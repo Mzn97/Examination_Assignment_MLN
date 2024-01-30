@@ -40,8 +40,8 @@
 }
 
 .navbar-item:hover, .cart-container svg:hover{
-    color: #e4e0e0d3;
-    stroke: #e4e0e0d3;
+    color: #767676;
+    stroke: #767676;
 }
 
 @media (min-width: 768px) {
