@@ -11,7 +11,7 @@ const ProductShoes = () => {
       }, []);
 
       function addProducts() {
-        fetch(`http://localhost:1337/api/categories/3?populate[products][populate]=*`)
+        fetch(`http://localhost:${import.meta.env.VITE_PORT}/api/categories/3?populate[products][populate]=*`)
           .then(res => res.json())
           .then(prod => {
             console.log(prod.data.attributes.products.data);

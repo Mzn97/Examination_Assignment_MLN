@@ -1,9 +1,9 @@
 button {
+  
   border-radius: 5px;
   border: 1px solid transparent;
   padding: 0.4em .5em;
   font-size: 1em;
-  font-weight: 500;
   font-family: inherit;
   background-color: #e4e0e0d3;
   cursor: pointer;
@@ -15,19 +15,20 @@ button:hover {
 
 
 .my-button{
-  margin: 0.em;
+ 
 }
 
-.card {
+.card  {
     
     width: 233px;
-    height: 28em;
+    height: 34em;
     background-color: #eeeeee;
     border-radius: 5px;
     margin-left:4.5em;
     margin-bottom: 2em;
     box-shadow: 4px 4px 9px grey;
     text-align : center;
+    font-size: smaller;
     transition: .1s
   }
 
