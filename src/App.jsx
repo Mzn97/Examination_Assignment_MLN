@@ -13,6 +13,7 @@ import Checkout from "./pages/Checkout";
 import Footer from "./components/Footer"; // Uppdatera sökvägen här
 import PurchaseConfirmation from './pages/PurchaseConfirmation';
 import ContactUs from "./pages/ContactUs";
+import Information from './pages/Information';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/ShoppingCart" element={<ShoppingCart />} />
           <Route path="/Checkout" element={<Checkout />} />
           <Route path="/ContactUs" element={<ContactUs />} />
+          <Route path="/Information" element={<Information />} />
           <Route path="/purchase-confirmation" element={<PurchaseConfirmation />} />
       </Routes>
       <Footer />{/* Här inkluderas Footer */}

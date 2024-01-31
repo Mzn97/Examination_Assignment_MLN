@@ -6,8 +6,8 @@
     padding: 1px; /* Minskat padding ytterligare */
     width: 100%;
     text-align: center;
-    position: fixed;
     bottom: 0;
+    margin-top: 100px;
 }
 
 .footer-content {
@@ -36,7 +36,7 @@
 }
 
 /* Media query för mindre skärmar (t.ex. mobiler) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .footer-section {
         flex-basis: 100%;
     }
