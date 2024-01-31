@@ -12,7 +12,7 @@ import ShoppingCart from "./pages/ShoppingCart";
 import Checkout from "./pages/Checkout";
 import Footer from "./components/Footer"; // Uppdatera sökvägen här
 import PurchaseConfirmation from './pages/PurchaseConfirmation';
-
+import ContactUs from "./pages/ContactUs";
 
 function App() {
   return (
