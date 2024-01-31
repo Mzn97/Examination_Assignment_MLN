@@ -31,8 +31,9 @@ function App() {
           <Route path="/ContactUs" element={<ContactUs />} />
           <Route path="/purchase-confirmation" element={<PurchaseConfirmation />} />
       </Routes>
-      <Footer /> {/* Här inkluderas Footer */}
+      <Footer />{/* Här inkluderas Footer */}
     </Router>
+    
   )
 }
 
