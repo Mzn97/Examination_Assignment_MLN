@@ -1,0 +1,26 @@
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    object-fit: contain;
+}
+
+.about-text {
+    width: 80%;
+    margin-top: 1.5rem;
+    margin-left: 0.5em;
+}
+
+.about-text p {
+    text-align: justify;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}

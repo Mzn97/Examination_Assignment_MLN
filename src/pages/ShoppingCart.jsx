@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const ShoppingCart = () => {
 
@@ -6,6 +6,7 @@ const ShoppingCart = () => {
         <div>
             <h1>KUNDKORG TEST</h1>
             <a href="/checkout"><button>Go to Checkout</button></a>
+            {/*Behövs att fixas!! Pop-up ska komma upp istället för en hel sida*/}
         </div>
     )
 }
