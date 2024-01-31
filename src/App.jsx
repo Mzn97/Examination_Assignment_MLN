@@ -1,4 +1,5 @@
 // App.jsx
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./pages/About";
 import Home from "./pages/Home";
@@ -9,9 +10,8 @@ import ProductShirts from "./pages/ProductShirts";
 import ProductFootballs from "./pages/ProduktFooballs";
 import ShoppingCart from "./pages/ShoppingCart";
 import Checkout from "./pages/Checkout";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer"; // Uppdatera sökvägen här
 import PurchaseConfirmation from './pages/PurchaseConfirmation';
-
 
 function App() {
   return (
@@ -28,7 +28,7 @@ function App() {
         <Route path="/Checkout" element={<Checkout />} />
         <Route path="/purchase-confirmation" element={<PurchaseConfirmation />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer /> {/* Här inkluderas Footer */}
     </Router>
   )
 }

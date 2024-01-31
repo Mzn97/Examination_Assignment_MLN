@@ -1,0 +1,43 @@
+/* Footer.css */
+
+.footer-container {
+    background-color: #e3d39a;
+    color: #5b3838;
+    padding: 1px; /* Minskat padding ytterligare */
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+    margin-bottom: 1px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 1px;
+}
+
+.footer-bottom {
+    margin-top: 1px;
+}
+
+/* Media query för mindre skärmar (t.ex. mobiler) */
+@media screen and (max-width: 600px) {
+    .footer-section {
+        flex-basis: 100%;
+    }
+}
