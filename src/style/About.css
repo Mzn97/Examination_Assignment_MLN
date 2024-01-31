@@ -13,6 +13,8 @@
     object-fit: contain;
 }
 
+
+
 .about-text {
     width: 80%;
     margin-top: 1.5rem;
@@ -24,3 +26,4 @@
     margin-bottom: 1rem;
     font-size: 1.3rem;
 }
+

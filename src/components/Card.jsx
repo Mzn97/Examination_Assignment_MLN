@@ -21,7 +21,7 @@ function Card({ prod }) {
                 </div>
             ) : (
                 <>
-                    <img src={'http://localhost:1337' + prod.attributes.image.data.attributes.url} alt="shop" height={290} width={233} />
+                    <img src={`http://localhost:${import.meta.env.VITE_PORT}` + prod.attributes.image.data.attributes.url} alt="shop" height={290} width={233} />
                     <div>
                     <p> +</p> 
                         
