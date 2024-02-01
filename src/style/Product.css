@@ -15,16 +15,30 @@ button:hover {
 
 
 .my-button{
- 
+
+    font-weight: 200;
+    width: 355px;
+    margin: 0;
+    padding-top:0 ;
+    height: 39px;
+    font-size: 1.5em;
+    background-color: #eeeeee;
+    border:none;
+    border-radius: 3px;
+    box-shadow: 4px 4px 9px grey;
+    
+}
+.my-button:hover {
+  background-color: #e4e0e0d3;
 }
 
 .card  {
-    
+ 
     width: 233px;
     height: 34em;
     background-color: #eeeeee;
     border-radius: 5px;
-    margin-left:4.5em;
+    margin-left:5.5em;
     margin-bottom: 2em;
     box-shadow: 4px 4px 9px grey;
     text-align : center;
@@ -40,13 +54,19 @@ button:hover {
   
   .categorycard{
     width: 355px;
-    height: 325px;
+    height: 250px;
     background-color: #eeeeee;
     border-radius: 5px;
-    margin-bottom: 1em;
+    margin: .6em;
     box-shadow: 4px 4px 9px grey;
     text-align : center;
+    margin-bottom: 6em;
   
+  }
+
+  .categorycardimg{
+    width: 355px;
+    height: 255px;
   }
   
   .category{
@@ -61,54 +81,96 @@ button:hover {
     
   }
 
-  @media screen and (min-width: 600px){
+  .productpageimg{
+    
+    display: none;
+  }
+
+  @media screen and (min-width: 700px){
     .card{
-      margin-left:2.5em;
+      width: 300px;
+      height: 450px;
+      margin: 2em;
     }
+
+    .productpageimg{
+      display: block;
+      width: 100%;
+      height: 90%;
+    }
+
+    .shopimg{
+      width: 300px;
+      height: 330px;
+    }
+
   }
 
 
-  @media screen and (min-width: 600px){
+
+
+  @media screen and (min-width: 700px){
     .products{
       display: flex;
       flex-wrap: wrap;
-      align-items: center;
       justify-content: center;
       
     }
+
+    
   }
 
-  @media screen and (min-width: 600px){
+  @media screen and (min-width: 700px){
     .pagetitle{
-
-      display: flex;
-      margin: 2em;
-      margin-left: 11em;
-      margin-right:11em;
+      
+      font-size: 5em;
+      margin: 0.3em;
+      margin-bottom: 0.5em;
+      width: 100%;
 
     }
   }
 
 
 
-  @media screen and (min-width: 600px){
+  @media screen and (min-width: 700px){
     .category{
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-     
       
     }
   }
 
   
-  @media screen and (min-width: 600px){
+  @media screen and (min-width: 700px){
     .categorycard{
-      margin: 1.5em;
+      
+
+      width: 400px;
+      height: 300px;
+      margin: 3em;
+      
     }
+    .categorycardimg{
+      width: 400px;
+      height: 300px;
+    }
+    .my-button{
+
+      width: 400px;
+      height: 39px;
+      font-size: 1.5em;
+     
+      
+  }
+  .my-button:hover {
+    background-color: #e4e0e0d3;
+  }
   }
   
   .description{
-    margin: 1em;
-    font-size: smaller;
+    margin: 3em;
+    
   }
 

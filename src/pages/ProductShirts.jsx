@@ -23,6 +23,9 @@ const ProductShirts = () => {
     return (
         
         <div className="products">
+            <div >
+          <img className="productpageimg" src="src/img/photo-1518847910297-1828dda4087a.jpg" alt="product img"></img> 
+          </div>
             <h1 className='pagetitle'>SHIRTS</h1>
             {
                 productList.map((prod, i) => {
