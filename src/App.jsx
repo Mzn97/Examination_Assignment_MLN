@@ -22,6 +22,7 @@ function App() {
       <Routes>
           <Route path="/" element={<Home />} />
           {/*Använder '/' som sökväg för hemsidan istället för "/Home" för att få slideshow att fungera*/}
+          <Route path="/Home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<Products />} />
           <Route path="/ProductShoes" element={<ProductShoes />} />
