@@ -3,7 +3,7 @@ import '../style/Information.css';
 
 const Information = () => {
   return (
-    <div>
+    <div className="information-container">
       <h1>Information</h1>
 
       <section>
