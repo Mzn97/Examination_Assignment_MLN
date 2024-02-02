@@ -1,0 +1,31 @@
+div {
+    text-align: center;
+}
+
+/* Rubrikstilar */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333; /* Färg på rubriken */
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: #555; /* Lite mörkare färg på underrubriker */
+}
+
+/* Styling för varje avsnitt */
+section {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd; /* Lägger till en linje under varje avsnitt för tydlighet */
+    padding-bottom: 50px; /* Lite mellanrum mellan avsnitten */
+}
+
+/* Textstilar för avsnitten */
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666; /* Lätt mörkare textfärg */
+}
