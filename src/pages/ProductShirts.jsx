@@ -24,7 +24,7 @@ const ProductShirts = () => {
         
         <div className="products">
             <div >
-          <img className="productpageimg" src="src/img/photo-1518847910297-1828dda4087a.jpg" alt="product img"></img> 
+          <img className="productpageimg" src="src\img\photo-1554992489-bf8679d57ac1.jpg" alt="product img"></img> 
           </div>
             <h1 className='pagetitle'>SHIRTS</h1>
             {
