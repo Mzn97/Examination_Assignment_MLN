@@ -32,7 +32,7 @@ const ContactForm = () => {
                 <label className="form-label">Email</label>
                 <input className="form-input"
                     type="email" 
-                    name="from_user_email" 
+                    name="from_email" 
                     required 
                 />
 
