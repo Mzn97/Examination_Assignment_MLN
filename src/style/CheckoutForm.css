@@ -24,7 +24,7 @@
     border-radius: 4px;
 }
 
-.checkout-form button {
+.checkout-form .complete-purchase-btn {
     width: 100%;
     padding: 10px;
     background-color: #4caf50;

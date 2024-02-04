@@ -131,7 +131,7 @@ const Checkout = () => {
                     autoComplete="cc-csc"
                     /* required */
                 />
-                <button type="submit">Complete Purchase</button>
+                <button className='complete-purchase-btn' type="submit">Complete Purchase</button>
                 <a href="/ShoppingCart" className="back-btn">Back to Shopping Cart</a>
             </form>
         </div>
