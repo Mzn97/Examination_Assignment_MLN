@@ -1,6 +1,6 @@
 button {
   
-  border-radius: 5px;
+  border-radius: .4em;
   border: 1px solid transparent;
   padding: 0.4em .5em;
   font-size: 1em;
@@ -24,8 +24,8 @@ button:hover {
     font-size: 1.5em;
     background-color: #eeeeee;
     border:none;
-    border-radius: 3px;
-    box-shadow: 4px 4px 9px grey;
+    border-radius: .4em;
+    box-shadow: .3em .3em .7em grey;
     
 }
 .my-button:hover {
@@ -34,39 +34,33 @@ button:hover {
 
 .card  {
  
-    width: 233px;
-    height: 34em;
+    width: 17.5em;
+    height: 32em;
     background-color: #eeeeee;
-    border-radius: 5px;
+    border-radius: .4em;
     margin-left:5.5em;
     margin-bottom: 2em;
-    box-shadow: 4px 4px 9px grey;
+    box-shadow: .3em .3em .7em grey;
     text-align : center;
     font-size: smaller;
-    transition: .1s
-  }
-
-  .card:hover{
-    transform: scale(1.1);
-    cursor: pointer;
+    
   }
   
   
   .categorycard{
-    width: 355px;
-    height: 250px;
+    width: 22.2em;
+    height: 15.7em;
     background-color: #eeeeee;
-    border-radius: 5px;
     margin: .6em;
-    box-shadow: 4px 4px 9px grey;
+    box-shadow: .3em .3em .7em grey;
     text-align : center;
     margin-bottom: 6em;
   
   }
 
   .categorycardimg{
-    width: 355px;
-    height: 255px;
+    width: 22.2em;
+    height: 15.7em;
   }
   
   .category{
@@ -86,22 +80,25 @@ button:hover {
     display: none;
   }
 
+
   @media screen and (min-width: 700px){
     .card{
-      width: 315px;
-      height: 460px;
+      width: 23.64em;
+      height: 35em;
       margin: 5em;
+      transition: .1s
     }
 
-    .productpageimg{
-      display: block;
-      width: 100%;
-      height: 90%;
-    }
+ 
 
     .shopimg{
-      width: 315px;
-      height: 340px;
+      width: 23.64em;
+      height: 26em;
+    }
+
+    .card:hover{
+      transform: scale(1.1);
+      cursor: pointer;
     }
 
   }
@@ -116,7 +113,11 @@ button:hover {
       justify-content: center;
       
     }
-
+    .productpageimg{
+      display: block;
+      width: 100%;
+      
+    }
     
   }
 
@@ -132,7 +133,6 @@ button:hover {
   }
 
 
-
   @media screen and (min-width: 700px){
     .category{
       display: flex;
@@ -146,20 +146,19 @@ button:hover {
   @media screen and (min-width: 700px){
     .categorycard{
       
-
-      width: 400px;
-      height: 300px;
+      width: 25em;
+      height: 19em;
       margin: 3em;
       
     }
     .categorycardimg{
-      width: 400px;
-      height: 300px;
+      width: 25em;
+      height: 19em;
     }
     .my-button{
 
-      width: 400px;
-      height: 39px;
+      width: 16.7em;
+      height: 2em;
       font-size: 1.5em;
      
       
