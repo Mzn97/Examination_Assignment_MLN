@@ -94,7 +94,7 @@ const Checkout = () => {
                 />
 
                 <input
-                    type="text"
+                    type="number"
                     name="zip"
                     value={formData.zip}
                     onChange={handleChange}
@@ -104,7 +104,7 @@ const Checkout = () => {
 
                 <h3>Payment Information</h3>
                 <input
-                    type="text"
+                    type="number"
                     name="cardNumber"
                     value={formData.cardNumber}
                     onChange={handleChange}
@@ -114,7 +114,7 @@ const Checkout = () => {
                 />
 
                 <input
-                    type="text"
+                    type="number"
                     name="expiryDate"
                     value={formData.expiryDate}
                     onChange={handleChange}
@@ -124,7 +124,7 @@ const Checkout = () => {
                 />
 
                 <input
-                    type="text"
+                    type="number"
                     name="cvv"
                     value={formData.cvv}
                     onChange={handleChange}
@@ -133,6 +133,7 @@ const Checkout = () => {
                     /* required */
                 />
                 <button type="submit">Complete Purchase</button>
+                <a href="/ShoppingCart" className="back-btn">Back to Shopping Cart</a>
             </form>
         </div>
     )

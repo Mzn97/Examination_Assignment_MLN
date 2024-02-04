@@ -38,3 +38,36 @@
 .checkout-form button:hover {
     background-color: #78aa78;
 }
+
+/* Allt nedaför är tillagt för back knappen, går att optimera */
+.back-btn, .checkout-form button {
+    box-sizing: border-box;
+    margin-top: 100px;
+}
+.back-btn, .checkout-form button {
+    margin: 0;
+    margin-top: 10px;
+}
+
+.back-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.back-btn:hover {
+    background-color: #78aa78;
+}
+
+/* Den här tar bort så att man inte kan använda sig av pilarna för att mata in nummer */
+.checkout-form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
