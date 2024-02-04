@@ -17,7 +17,7 @@
 }
 
 .checkout-form input {
-    width: 100%;
+    width: 94%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
@@ -70,4 +70,10 @@
 /* Den här tar bort så att man inte kan använda sig av pilarna för att mata in nummer */
 .checkout-form input::-webkit-inner-spin-button {
   -webkit-appearance: none;
+}
+
+@media (min-width: 768px) {
+    .checkout-form input {
+        width: 97%;          /* ändrade denna för att få in input från höger */
+    }
 }

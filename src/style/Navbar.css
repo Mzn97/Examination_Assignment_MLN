@@ -11,7 +11,6 @@
 }
 
 .navbar-text {
-    /* text-decoration: none; */ /* ska den finnas ?? */
     display: flex;
     align-items: center;
     font-weight: 900;
@@ -22,7 +21,7 @@
 }
 
 .navbar-text:hover {
-    background-color: #f0f0f0;  /* KOLLA DENNA */
+    background-color: #f0f0f0; 
     border-radius: 15px;
 }
 

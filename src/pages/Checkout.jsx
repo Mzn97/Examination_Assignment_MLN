@@ -4,7 +4,7 @@ import CheckoutForm from '../components/CheckoutForm';
 const Checkout = () => {
   return (
     <div>
-        <h1 className="contact-form-h1">Checkout</h1>
+        <h1 className="contact-form-h1">CHECKOUT</h1>
             <CheckoutForm />
     </div>
   )

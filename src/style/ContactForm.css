@@ -27,7 +27,7 @@
 .form-textarea {
     font-size: 15px;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: none;
@@ -44,14 +44,14 @@
     font-size: 16px;
     padding: 12px;
     color: #fff;
-    background-color: #007bff;
+    background-color: #3b3d3f;
     border: none;
     border-radius: 4px;
-    transition: background-color 0.9s;
+    transition: background-color 0.7s;
 }
 
 .form-button:hover {
-    background-color: #0056b3;
+    background-color: #7a7d7f;
 }
 
 @media (min-width: 768px) {
