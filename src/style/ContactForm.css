@@ -2,8 +2,7 @@
     text-align: center;
     margin-top: 2vh;
     font-size: 20px;
-    font-weight: 700;
-    margin-top:3em
+    font-weight: 800;
 }
 
 .contact-form {
@@ -68,6 +67,7 @@
 @media (min-width: 768px) {
     .contact-form-h1 {
         font-size: 40px;
+        margin-top: 2.5em
     }
 }
 
