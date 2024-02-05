@@ -6,6 +6,7 @@ import HamburgerMenu from './HamburgerMenu'
 const Navbar = () => {
     
     return (
+        
         <div className="navbar-container">
             <nav className="navbar">
                 <div className="icon-container">
@@ -16,14 +17,15 @@ const Navbar = () => {
                         <path d="M12 7v-4m3 13l2.5 3m-.74 -8.55l3.74 -1.45m-11.44 7.05l-2.56 2.95m.74 -8.55l-3.74 -1.45" />
                     </svg>
                 </div>
+                <div className='testnav'>
                 
                 <Link to="/" className="navbar-text">MLNK</Link>
-                <Link to="/about" className="navbar-item"><h2>About us</h2></Link>
-                <Link to="/products" className="navbar-item"><h2>Products</h2></Link>
-
+                <Link to="/about" className="navbar-item">About us</Link>
+                <Link to="/products" className="navbar-item">Products</Link>
+                
                 <div className="navbar-container cart-container">
-                    <Link to="/ShoppingCart" className="navbar">
-                    <span className="navbar-item"><h2>Shopping Cart</h2></span>
+                    <Link to="/ShoppingCart" className="navbar-item">
+                    <span className="navbar-item">Shopping Cart</span>
                         <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-shopping-cart" width="30" height="35" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#000000" fill="none" strokeLinecap="round" strokeLinejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
@@ -33,7 +35,7 @@ const Navbar = () => {
                         </svg>
                     </Link>
                 </div>
-
+                </div>
                 <HamburgerMenu />
 
             </nav>

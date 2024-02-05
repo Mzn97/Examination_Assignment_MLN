@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from "/src/components/Card.jsx";
+import MyButton from '../components/MyButton';
 import { useState, useEffect } from 'react'
  
 const ProductShoes = () => {
@@ -23,6 +24,10 @@ const ProductShoes = () => {
         
         <div className="products">
           <img className="productpageimg" src="\src\img\photo-1551854304-9235bf86ef71.jpg" alt="product img" ></img> 
+           <div className="mini-menu">
+           <MyButton to="ProductShirts" name="Shirts" />
+            <MyButton to="ProductFootballs" name="Footballs" />
+           </div>
             <h1 className='pagetitle'>SHOES</h1>
             {
                 productList.map((prod, i) => {

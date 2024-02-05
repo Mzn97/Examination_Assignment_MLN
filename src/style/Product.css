@@ -18,7 +18,7 @@ button:hover {
 
     font-weight: 200;
     width: 355px;
-    margin: 0;
+    margin:.05em;
     padding-top:0 ;
     height: 39px;
     font-size: 1.5em;
@@ -80,6 +80,8 @@ button:hover {
     display: none;
   }
 
+ 
+
 
   @media screen and (min-width: 700px){
     .card{
@@ -104,7 +106,9 @@ button:hover {
   }
 
 
-
+  .mini-menu{
+    display: none;
+  }
 
   @media screen and (min-width: 700px){
     .products{
@@ -114,9 +118,14 @@ button:hover {
       
     }
     .productpageimg{
+      margin-top: 4.7em;
       display: block;
       width: 100%;
       
+    }
+
+    .mini-menu{
+      display: flex;
     }
     
   }

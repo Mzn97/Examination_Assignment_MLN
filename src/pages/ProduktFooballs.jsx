@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from "/src/components/Card.jsx";
 import { useState, useEffect } from 'react'
+import MyButton from '../components/MyButton';
  
 const ProductFootballs = () => {
     const [productList, setProductList] = useState([])
@@ -23,6 +24,10 @@ const ProductFootballs = () => {
         
         <div className="products">
           <img className="productpageimg" src="src/img/photo-1588684325776-cac25e735eff.jpg" alt="product img"></img> 
+            <div className="mini-menu">
+            <MyButton to="ProductShirts" name="Shirts" />
+            <MyButton to="ProductShoes" name="Shoes" />
+            </div>
             <h1 className='pagetitle'>FOOTBALLS</h1>
             {
                 productList.map((prod, i) => {
