@@ -56,13 +56,16 @@
 
 
 .social-media {
+    font: size 170px;
     text-align: center;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 25vh;
+    height: 6vh;
 }
+
+.icons {
+    text-align: center;
+    padding: 1%;
+  }
 
 @media (min-width: 768px) {
     .contact-form-h1 {

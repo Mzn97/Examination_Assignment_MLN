@@ -72,7 +72,7 @@
 @media screen and (max-width: 768px) {
     .footer-section {
         flex-basis: 100%;
-    }
+    } 
 .footer-section h4,
 .footer-section svg {
     display: none;

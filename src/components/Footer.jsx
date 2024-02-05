@@ -9,6 +9,7 @@ const Footer = () => {
         <div className="footer-section">
           <h4>Connect with MLNK</h4>
           <p></p>
+          
           <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
   <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-brand-instagram" width="39" height="44" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#666666" fill="none" strokeLinecap="round" strokeLinejoin="round">
     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
