@@ -1,6 +1,6 @@
 import React from 'react';
 import CategoryCard from '../components/CategoryCard';
-import MyButton from '../components/MyButton';
+
 
 const Products = () => {
     return (

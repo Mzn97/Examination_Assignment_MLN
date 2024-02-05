@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
 import '../style/CheckoutForm.css'
 import { useNavigate } from 'react-router-dom';
+import emailjs from 'emailjs-com';
 
 const Checkout = () => {
+
+    
     // useState hook används för att hantera formulärdata.
     // Initierar en state-variabel 'formData' med ett objekt som innehåller tomma strängar för varje fält.
     const [formData, setFormData] = useState({
@@ -32,8 +35,31 @@ const Checkout = () => {
     const handleSubmit = (event) => {
         event.preventDefault() // Förhindrar default beteende
         console.log('Form Data:', formData) // Loggar formulärdata
+        sendConfirmationEmail();
         navigate('/purchase-confirmation') // Omdirigerar till köpbekräftelsesidan
-    }
+    };
+        // config, appsettings.json (för inte visa nycklarna?)
+    const sendConfirmationEmail = () => {
+        const serviceId = 'service_jzn8rjq'; 
+        const templateId = 'template_fig3c7k'; 
+        const publicKey = 'zOr1Qa1PNpHLqisnU'; 
+
+        emailjs.send(serviceId, templateId, {
+            to_email: formData.email, // Använd e-postadressen från formuläret
+            to_name: formData.name, // Använd namnet från formuläret
+            from_name: "MLNK",
+            message: "hej hej"
+        }, publicKey)
+        .then((response) => {
+            console.log('Mail skickat:', response);
+        })
+        .catch((error) => {
+            console.error('Fel vid sändning av mail:', error);
+        });
+    };
+
+
+
 
     return (
         <div className="checkout-form">
