@@ -42,5 +42,3 @@ const Navbar = () => {
 }
 
 export default Navbar;
-
-//Lägg den här Css till en --> module.css???

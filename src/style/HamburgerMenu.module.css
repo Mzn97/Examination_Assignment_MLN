@@ -24,6 +24,7 @@
     background-color: #eeeeee;
     overflow: hidden;
     transition: right 0.7s;
+    z-index: 1000;
 }
 
 .menuContainerOpen {
