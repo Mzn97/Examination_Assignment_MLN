@@ -25,17 +25,17 @@
     border-radius: 15px;
 }
 
+.icon.icon-tabler.icon-tabler-shopping-cart{
+    display: flex;
+}
 
-.navbar-item {
+.navbar-item{
     display: none;
-    align-items: center;
-    font-weight: 200;
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    font-size: 15px; 
-    color: black;
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 10px;
+   
+}
+.navbar-cart{
+    padding: 0;
+    margin: 0;
 }
 
 .navbar-item:hover, .cart-container svg:hover{
@@ -44,9 +44,14 @@
 }
 
 @media (min-width: 768px) {
-    .navbar-item, span.navbar-item {
+    .navbar-item, span.navbar-item,.navbar-cart {
         display: flex;
         font-size: 24px;
+        padding: 5px 10px;
+        align-items: center; 
+        text-decoration: none;
+        color: black;
+        font-weight: 200;
     }
 
     .icon.icon-tabler.icon-tabler-shopping-cart {
