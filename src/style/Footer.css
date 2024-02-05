@@ -6,12 +6,12 @@
 }
 
 .footer-section h4 {
-    margin-bottom: 5px;
-    line-height: 1;
+    margin-bottom: -10px;
+    line-height: 4;
 }
 
 .footer-section p {
-    margin-top: 10px;
+    margin-top: 13px;
 }
 
 .footer-section svg {
@@ -41,11 +41,12 @@
 }
 
 .footer-section {
+    font-size:medium;
     flex: 1;
-    margin-bottom: 1px;
+    margin-bottom: 35px;
 }
 
-.footer-links {
+.footer-links, p {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -55,7 +56,7 @@
     color: #666666;
     font-size: 19px;
     display: block;
-    margin-top: 26px;
+    margin-top: 3px;
 }
 
 .footer-links li {
@@ -63,7 +64,8 @@
 }
 
 .footer-bottom {
-    margin-top: 1px;
+    font-size: 14px;
+    margin-top: 2px;
 }
 
 
@@ -71,4 +73,8 @@
     .footer-section {
         flex-basis: 100%;
     }
+.footer-section h4,
+.footer-section svg {
+    display: none;
+}
 }

@@ -54,6 +54,16 @@
     background-color: #7a7d7f;
 }
 
+
+.social-media {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+}
+
 @media (min-width: 768px) {
     .contact-form-h1 {
         font-size: 40px;
