@@ -17,8 +17,10 @@ const ProductFootballs = () => {
           .then(prod => {
             console.log(prod.data.attributes.products.data);
             setProductList(prod.data.attributes.products.data);
-          })
-      }// sätt en catch ()
+          }).catch(e => {
+            console.log(e)
+        })
+      }// Catch tillagd - nats
 
     return (
         

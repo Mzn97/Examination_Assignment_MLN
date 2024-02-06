@@ -1,11 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import { CartContext } from "../App.jsx";
 
 function Card({ prod }) {
     const [showDescription, setShowDescription] = useState(false);
+    const { addItemToCart } = useContext(CartContext);
 
     const toggleDescription = () => {
         setShowDescription(!showDescription);
     };
+
+    const handleAddToCart = () => {
+        addItemToCart({id: prod.id, price: prod.attributes.price, title: prod.attributes.title, quantity: 1});
+    }
 
     return (
         <div className="card">
@@ -32,7 +38,7 @@ function Card({ prod }) {
                 </>
             )}
         </div>
-        <button className='btn'>Buy</button>
+        <button className='btn' onClick={handleAddToCart}>Buy</button>
         </div>
     );
 }
