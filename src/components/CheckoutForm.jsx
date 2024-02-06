@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import '../style/CheckoutForm.css'
 import { useNavigate } from 'react-router-dom';
 import emailjs from 'emailjs-com';
+//import { withRouter } from 'react-router-dom';
 
 const Checkout = () => {
 
@@ -20,6 +21,7 @@ const Checkout = () => {
         cvv: "",
     })
     const navigate = useNavigate()
+   
 
     // handleChange uppdaterar formData när användaren skriver i ett inputfält.
     // Varje fält identifieras med 'name' och uppdateras med det nya värdet.
@@ -34,9 +36,11 @@ const Checkout = () => {
     // Den förhindrar sidans standarduppdatering och navigerar sedan till bekräftelsesidan.
     const handleSubmit = (event) => {
         event.preventDefault() // Förhindrar default beteende
+        //const { history, formData } = this.props;
         console.log('Form Data:', formData) // Loggar formulärdata
         sendConfirmationEmail();
-        navigate('/purchase-confirmation') // Omdirigerar till köpbekräftelsesidan
+       // history.push('/purchase-confirmation', {email: formData.email});
+        navigate('/purchase-confirmation', {email: formData.email}) // Omdirigerar till köpbekräftelsesidan
     };
         // config, appsettings.json (för inte visa nycklarna?)
     const sendConfirmationEmail = () => {
@@ -164,4 +168,5 @@ const Checkout = () => {
     )
 }
 
+//export default withRouter(Checkout);
 export default Checkout;
