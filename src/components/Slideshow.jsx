@@ -17,7 +17,7 @@ const Slider = () => {
     return (
         <Slide style={{ height: 'auto', width: 'auto' }} autoplay={{enabled: true, interval: intervalValue}}>
             {images.map((image, index) => (
-                <div key={index}>
+                <div className='homeSlidShow' key={index}>
                     <img src={image}
                          alt={`Slide ${index + 1}`}
                          style={{ height: 'auto', width: '100%'}}
