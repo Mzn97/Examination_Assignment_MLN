@@ -158,7 +158,7 @@ const Checkout = () => {
                     name="cvv"
                     value={formData.cvv}
                     onChange={handleChange}
-                    placeholder="CVV"
+                    placeholder="CVC/CVV"
                     autoComplete="cc-csc"
                     /* required */
                 />
