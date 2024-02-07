@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import {CartContext} from "../App.jsx";
 import style from '../style/ShoppingCart.module.css'
+import { Link } from "react-router-dom";
 
 
 const ShoppingCart = ({cartItems, addItemToCart}) => {
@@ -31,7 +32,9 @@ const ShoppingCart = ({cartItems, addItemToCart}) => {
             ))}
             </div>
             <div className={style["cart-total"]}>
-                <a href="/checkout" className={style["checkout-button"]}>Go to Checkout</a>     {/* DEN HÄR RADEN ÄR TILLAGD */}
+            <Link to={{ pathname: "/checkout", state: { cartItems: cartItems } }} className={style["checkout-button"]}>Gå till utcheckning</Link>
+
+               {/* <a href="/checkout" className={style["checkout-button"]}>Go to Checkout</a>      DEN HÄR RADEN ÄR TILLAGD */}
                 Total: {calculateTotalPrice(cart.cart)} kr
                 
             {/*<button onClick={() => cart.addItemToCart({quantity: 1, title: 'en sko', price: 500})}>add to cart</button>*/}
