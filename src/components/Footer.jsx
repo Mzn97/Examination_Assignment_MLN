@@ -63,9 +63,8 @@ const Footer = () => {
 </div>    
 
         <div className="footer-section">
-          <h4>Customer service</h4>
+        <h4> <a href="Information"className="Footer-headline">Customer Service</a></h4>
           <ul className="footer-links">
-            <li><Link to="/Information" className="information-link">Shipping Info</Link></li>
           </ul>
             <p> - Delivery </p>
             <p> - Exchanges & Returns </p>
@@ -73,18 +72,16 @@ const Footer = () => {
         </div>
 
         <div className="footer-section">
-          <h4>Procducts</h4>
+          <h4> <a href="Products"className="Footer-headline">Products</a></h4>
           <ul className="footer-links">
-            <li><Link to="/Products" className="products-link">In stock</Link></li>
           </ul>
             <p> - SHIRTS </p>
             <p> - SHOES </p>
             <p> - FOOTBALLS </p>
         </div>
 
-
         <div className="footer-section">
-          <h4>Contact Us</h4>
+          <h4> <a href="./ContactUs"className="Footer-headline">Contact Us</a></h4>
           <p>Email: info@MLNK.com</p>
           <p>Phone: +123 456 789</p>
         </div>
