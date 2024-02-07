@@ -40,9 +40,19 @@ function App() {
     }
 
     const addItemToCart = (item) => {
-        console.log('add')
-        setCart([...cart, item])
-    }
+        // Kontrollera om artikeln redan finns i kundvagnen
+        const existingItemIndex = cart.findIndex((cartItem) => cartItem.id === item.id);
+
+        if (existingItemIndex !== -1) {
+            // Om artikeln redan finns, öka dess kvantitet
+            const updatedCart = [...cart];
+            updatedCart[existingItemIndex].quantity += 1;
+            setCart(updatedCart);
+        } else {
+            // Om artikeln inte finns, så lägg till den som vanligt
+            setCart([...cart, item])
+        }
+    };
 
     const addQuantity = (id) => {
         const tempArr = [...cart]
@@ -84,19 +94,6 @@ function App() {
     <Router>
       <div>
       <Navbar />
-          {/*<div>*/}
-          {/*    {cart.map((item, index) => (*/}
-          {/*        <div className="shopping-cart-item" key={index}>*/}
-          {/*            <div className="shopping-cart-item-name">{item.title}</div>*/}
-          {/*            <div className="shopping-cart-item-price">{item.price} kr</div>*/}
-          {/*            <div className="shopping-cart-item-price">{item.quantity} x</div>*/}
-          {/*            <div className="shopping-cart-item-quantity">*/}
-          {/*                <button onClick={() => cart.addItemToCart()}>Add+</button>*/}
-          {/*                <button onClick={() => removeItemFromCart()}>Remove-</button>*/}
-          {/*            </div>*/}
-          {/*        </div>*/}
-          {/*    ))}*/}
-          {/*</div>*/}
       <Routes>
           <Route path="/" element={<Home />} />
           {/*Använder '/' som sökväg för hemsidan istället för "/Home" för att få slideshow att fungera*/}
