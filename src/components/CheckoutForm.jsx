@@ -71,7 +71,7 @@ const Checkout = () => {
             {/* Varje inputfält är bundet till ett specifikt värde i formData och uppdateras via handleChange */}
             {/* "name"-attributet i varje input matchar en nyckel i formData */}
             {/* Hänvisar till funktionen "handleSubmit" när användaren kllickar på genomför köp, eftersom den är kopplad till onSubmit */}
-            <form onSubmit={handleSubmit}>
+            <form autoComplete="off" onSubmit={handleSubmit}>
                 <h3>Contact Information</h3>
                 <input
                     type="email"
@@ -79,7 +79,6 @@ const Checkout = () => {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="Email Address"
-                    autoComplete="email"
                     /* required */
                 />
 
@@ -89,7 +88,6 @@ const Checkout = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     placeholder="Phone Number"
-                    autoComplete="tel"
                     /* required */
                 />
 
@@ -100,7 +98,6 @@ const Checkout = () => {
                     value={formData.name}
                     onChange={handleChange}
                     placeholder="Full Name"
-                    autoComplete="name"
                     /* required */
                 />
 
@@ -110,7 +107,6 @@ const Checkout = () => {
                     value={formData.address}
                     onChange={handleChange}
                     placeholder="Address"
-                    autoComplete="address"
                     /* required */
                 />
 
@@ -139,7 +135,6 @@ const Checkout = () => {
                     value={formData.cardNumber}
                     onChange={handleChange}
                     placeholder="Card Number"
-                    autoComplete="cc-number"
                     /* required */
                 />
 
@@ -149,7 +144,6 @@ const Checkout = () => {
                     value={formData.expiryDate}
                     onChange={handleChange}
                     placeholder="Expiration Date MM/YY"
-                    autoComplete="cc-exp"
                     /* required */
                 />
 
@@ -159,7 +153,6 @@ const Checkout = () => {
                     value={formData.cvv}
                     onChange={handleChange}
                     placeholder="CVC/CVV"
-                    autoComplete="cc-csc"
                     /* required */
                 />
                 <button className='complete-purchase-btn' type="submit">Complete Purchase</button>
