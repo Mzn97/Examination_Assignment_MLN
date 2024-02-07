@@ -38,6 +38,7 @@
 
 .cart-item {
     display: flex;
+    font-size: 12px;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
@@ -89,5 +90,11 @@
 
 }  
 
+
+@media (min-width: 768px) {
+    .cart-item {
+        font-size: 17px; 
+    }
+}
 
 
