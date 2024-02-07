@@ -20,7 +20,7 @@ const Slider = () => {
                 <div className='homeSlidShow' key={index}>
                     <img src={image}
                          alt={`Slide ${index + 1}`}
-                         style={{ height: 'auto', width: '100%'}}
+                         style={{ height: 'auto', width: '100%', maxHeight: '45rem'}}
                     />
                 </div>
             ))}
