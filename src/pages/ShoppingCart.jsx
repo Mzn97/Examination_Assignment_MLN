@@ -31,7 +31,9 @@ const ShoppingCart = ({cartItems, addItemToCart}) => {
             ))}
             </div>
             <div className={style["cart-total"]}>
+                <a href="/checkout" className={style["checkout-button"]}>Go to Checkout</a>     {/* DEN HÄR RADEN ÄR TILLAGD */}
                 Total: {calculateTotalPrice(cart.cart)} kr
+                
             {/*<button onClick={() => cart.addItemToCart({quantity: 1, title: 'en sko', price: 500})}>add to cart</button>*/}
             {/*<button onClick={cart.removeItemFromCart}>print cart</button>*/}
             {/*<div className="shopping-cart-total">{`Total: $${calculateTotalPrice(cart)}`}</div>*/}
