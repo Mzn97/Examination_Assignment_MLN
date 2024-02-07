@@ -20,7 +20,7 @@
 
 .shop-now-button {
     display: inline-block;
-    margin: 0.5em auto 0 auto;
+    margin: 2em auto 0 auto;        /* Ändrad från 0.5em --> 2em */
     padding: 0.5rem 2rem;
     font-size: 16px;
     font-weight: bold;
@@ -40,3 +40,17 @@
 .homeSlidShow{
     margin-top: 4.5em;
 }
+
+/* ------ Tillagd ------- */
+
+@media (max-width: 768px) {
+    .homeSlidShow{
+        margin-top: 0.5em;
+    }
+
+    .shop-now-button {
+        margin-top: 45px;
+        margin-bottom: -15px;
+    }
+}
+/* --------------------------- */
