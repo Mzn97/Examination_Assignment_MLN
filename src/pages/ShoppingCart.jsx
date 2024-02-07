@@ -21,7 +21,7 @@ const ShoppingCart = ({cartItems, addItemToCart}) => {
 
 
     return (
-        <div>
+        <div className={style["test-cart"]}>
             {/*<ShoppingCartImage />*/}
         <div className={style["shopping-cart"]}>
             <h1>Shopping Cart</h1>
