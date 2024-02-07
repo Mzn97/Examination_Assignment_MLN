@@ -51,14 +51,15 @@ const Checkout = () => {
         emailjs.send(serviceId, templateId, {
             to_email: formData.email, // Använd e-postadressen från formuläret
             to_name: formData.name, // Använd namnet från formuläret
+            reply_to: formData.email,
             from_name: "MLNK",
-            message: "hej hej"
+            message: "Thank you for your order!"
         }, publicKey)
         .then((response) => {
-            console.log('Mail skickat:', response);
+            console.log('Mail sent:', response);
         })
         .catch((error) => {
-            console.error('Fel vid sändning av mail:', error);
+            console.error('Error sending mail:', error);
         });
     };
 
