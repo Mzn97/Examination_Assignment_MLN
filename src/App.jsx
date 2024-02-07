@@ -64,9 +64,13 @@ function App() {
     const removeQuantity = (id) => {
         const tempArr = [...cart]
 
-        tempArr.forEach((item) => {
+        tempArr.forEach((item, index) => {
             if(item.id === id) {
-                item.quantity--
+                item.quantity--;
+                // Tar bort produkten från kundvagn om antalet är 0 eller mindre
+                if (item.quantity <= 0) {
+                    tempArr.splice(index, 1);
+                }
             }
         })
 

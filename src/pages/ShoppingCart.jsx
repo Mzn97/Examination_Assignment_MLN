@@ -7,11 +7,15 @@ import { Link } from "react-router-dom";
 const ShoppingCart = ({cartItems, addItemToCart}) => {
 
     const cart = useContext(CartContext)
-    console.log(cart)
+    // console.log(cart)
 
 
     function calculateTotalPrice(cartItems) {
-        return cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
+        // Filtrerar ut produkten med antal <= 0
+        const validItems = cartItems.filter((item) => item.quantity > 0);
+        // Kalkylerar total priset för de valda produkterna
+        return validItems.reduce((total, item) => total + item.price * item.quantity, 0);
+        // return cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
     }
 
 
