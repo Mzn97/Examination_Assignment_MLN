@@ -32,7 +32,7 @@ const ShoppingCart = ({cartItems, addItemToCart}) => {
             ))}
             </div>
             <div className={style["cart-total"]}>
-            <Link to={{ pathname: "/checkout", state: { cartItems: cartItems } }} className={style["checkout-button"]}>Check out</Link>
+            <Link to={{ pathname: "/checkout", state: { cartItems: cartItems } }} className={style["checkout-button"]}>Checkout</Link>
 
                {/* <a href="/checkout" className={style["checkout-button"]}>Go to Checkout</a>      DEN HÄR RADEN ÄR TILLAGD */}
                 Total: {calculateTotalPrice(cart.cart)} :-
