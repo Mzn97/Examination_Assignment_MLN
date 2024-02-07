@@ -3,11 +3,12 @@ import {CartContext} from "../App.jsx";
 import style from '../style/ShoppingCart.module.css'
 import { Link } from "react-router-dom";
 
+// import ShoppingCartImage from "../components/ShoppingCart.jsx";
 
 const ShoppingCart = ({cartItems, addItemToCart}) => {
 
     const cart = useContext(CartContext)
-    // console.log(cart)
+        console.log(cart)
 
 
     function calculateTotalPrice(cartItems) {
@@ -20,6 +21,8 @@ const ShoppingCart = ({cartItems, addItemToCart}) => {
 
 
     return (
+        <div>
+            {/*<ShoppingCartImage />*/}
         <div className={style["shopping-cart"]}>
             <h1>Shopping Cart</h1>
             <div className={style["cart-items"]}>
@@ -40,13 +43,13 @@ const ShoppingCart = ({cartItems, addItemToCart}) => {
 
                {/* <a href="/checkout" className={style["checkout-button"]}>Go to Checkout</a>      DEN HÄR RADEN ÄR TILLAGD */}
                 Total: {calculateTotalPrice(cart.cart)} :-
-                
+
             {/*<button onClick={() => cart.addItemToCart({quantity: 1, title: 'en sko', price: 500})}>add to cart</button>*/}
             {/*<button onClick={cart.removeItemFromCart}>print cart</button>*/}
             {/*<div className="shopping-cart-total">{`Total: $${calculateTotalPrice(cart)}`}</div>*/}
             </div>
         </div>
-
+        </div>
     );
 };
 
