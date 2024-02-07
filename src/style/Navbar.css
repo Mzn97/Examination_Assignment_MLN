@@ -11,6 +11,17 @@
     margin-right: 5px; /* ändrad, 10px först */
 }
 
+/* TILLAGD STIL FÖR NOTIS */
+.cart-item-count {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    position: absolute;
+    top: -8px;
+    right: -13px;
+}
 
 /* TILLAGD */
 .testnav, .cart-container, .hamburgerMenuContainer {
@@ -50,6 +61,7 @@
 
 .navbar-item{
     display: none;
+    position: relative; /* Denna är för att få notisen bredvid 'Shoppung Cart' */
    
 }
 .navbar-cart{

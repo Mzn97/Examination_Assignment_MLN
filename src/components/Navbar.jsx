@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import { CartContext } from "../App.jsx";
 import '../style/Navbar.css'
 import HamburgerMenu from './HamburgerMenu'
 
 const Navbar = () => {
+    const cart = useContext(CartContext);
+
+    // Räkna antalet produkter i kundvagnen
+    const cartItemCount = cart.cart.reduce((total, item) => total + item.quantity, 0);
+
     return (
         <div className="navbar-container">
             <nav className="navbar">
@@ -11,7 +17,12 @@ const Navbar = () => {
                     <Link to="/" className="navbar-text">MLNK</Link>
                     <Link to="/about" className="navbar-item">About us</Link>
                     <Link to="/products" className="navbar-item">Products</Link>
-                    <Link to="/ShoppingCart" className="navbar-item">Shopping Cart</Link>
+                    <Link to="/ShoppingCart" className="navbar-item">
+                        Shopping Cart
+                        {cartItemCount > 0 && ( //Visa notis endast om det finns produkter i kundvagnen
+                            <span className="cart-item-count">{cartItemCount}</span>
+                            )}
+                        </Link>
                 </div>
                 <div className="action-container">      {/* tillagd */}
                     <Link to="/ShoppingCart" className="navbar-cart">
