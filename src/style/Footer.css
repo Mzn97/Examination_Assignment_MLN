@@ -6,12 +6,18 @@
 }
 
 .footer-section h4 {
+    color: #000000;
     margin-bottom: -10px;
     line-height: 4;
 }
 
 .footer-section p {
     margin-top: 13px;
+}
+
+.Footer-headline {
+color:#000000
+
 }
 
 .footer-section svg {
@@ -72,9 +78,16 @@
 @media screen and (max-width: 768px) {
     .footer-section {
         flex-basis: 100%;
+        font-size: 12px;
     } 
-.footer-section h4,
-.footer-section svg {
-    display: none;
-}
+
+    .footer-section svg {
+    width: 26px;
+    height: 26px;
+    }
+
+    .footer-bottom {
+        font-size: 11px;
+        margin-top: 2px;
+    }
 }
