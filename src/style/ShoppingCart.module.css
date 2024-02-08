@@ -25,7 +25,7 @@
 
 
 .shopping-cart h1 {
-    font-size: 25px;
+    font-size: 30px;
     margin-bottom: 15px;
     text-align: center; /* Centrera h1 */
     color: black;
@@ -47,12 +47,12 @@
     border: 1px solid black; /* Linje runt varje produkt */
 }
 
-.item-image img {
-    display: flex;
-    flex-direction: column;
-    height: 100px;
-    width: auto;
-}
+/*.item-image img {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    height: 100px;*/
+/*    width: auto;*/
+/*}*/
 
 .item-details {
     flex: 1;
@@ -62,15 +62,17 @@
 }
 
 .item-name {
-    order: -1;
+    display: flex;
     font-weight: bold;
+    margin: 0 18px 0 18px ;
+    white-space: nowrap;
 }
 
 .item-quantity {
     flex-direction: row;
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 100%
 }
 
 .item-quantity button {
@@ -78,21 +80,22 @@
     border-radius: 3px;
     padding: 5px 10px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .item-quantity button:hover {
     background-color: #66686a;
 }
 
-.item-price {
-    margin-left: auto;
-    margin-right: auto;
-}
+/*.item-price {*/
+/*    margin-left: auto;*/
+/*    margin-right: auto;*/
+/*}*/
 
 .remove-icon {
     cursor: pointer;
     font-size: 20px;
-    color: black;
+    color: #3C3D3F;
 }
 
 .cart-total {
@@ -119,7 +122,6 @@
 .checkout-button:hover {
     background-color: #66686a;
 }
-
 
 .test-cart{
     margin-top: 6em;

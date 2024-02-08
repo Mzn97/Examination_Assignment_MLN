@@ -26,8 +26,8 @@ const ShoppingCart = ({cartItems, addItemToCart}) => {
                 <div className={style["cart-items"]}>
                     {cart.cart.map((item, index) => (
                         <div className={style["cart-item"]} key={index}>
-                            <div className={style["item-image"]}>
-                                <CardImage imageUrl={item.image} />
+                            <div className={style["cart-image"]}>
+                                <CardImage imageUrl={item.image}  />
                             </div>
                             <div className={style["item-details"]}>
                                 <div className={style["item-name"]}>{item.title}</div>

@@ -10,7 +10,8 @@ function Card({ prod }) {
     };
 
     const handleAddToCart = () => {
-        addItemToCart({id: prod.id, price: prod.attributes.price, title: prod.attributes.title, quantity: 1});
+        console.log(prod)
+        addItemToCart({id: prod.id, price: prod.attributes.price, title: prod.attributes.title, quantity: 1, image: prod.attributes.image.data.attributes.url});
     }
 
     return (
