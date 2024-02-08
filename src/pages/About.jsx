@@ -5,8 +5,8 @@ const About = () => {
     return (
         <div className="about">
             <div className="about-content">
-                <img src="src/img/AboutUsPics.png" alt="About Us" className="about-image" /> {/*styla img*/}
-                <div className="about-text"> {/*styla text*/}
+                <img src="src/img/AboutUsPics.png" alt="About Us" className="about-image" />
+                <div className="about-text">
                     <p>
                         At MLNK, we're more than just a store; we're your dedicated destination for everything soccer. Immerse yourself in a world where the beautiful game comes alive through our premium selection of soccer jerseys, footballs, and gear. We pride ourselves on offering authentic, high-quality products that not only elevate your performance on the field but also reflect your love for the sport.
                     </p>

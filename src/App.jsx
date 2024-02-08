@@ -66,7 +66,9 @@ function App() {
         setCart(tempArr)
     }
 
-    const removeItemFromCart = () => {
+    const removeItemFromCart = (id) => {
+        const updatedCart = cart.filter((item) => item.id !== id);
+        setCart(updatedCart);
         console.log("remove")
         console.log(cart)
     }
