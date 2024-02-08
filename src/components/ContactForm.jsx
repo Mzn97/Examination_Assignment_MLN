@@ -20,7 +20,7 @@ const ContactForm = () => {
 
     return (
         <div>
-            <form ref={form} onSubmit={sendEmail} className="contact-form">
+            <form autoComplete="off" ref={form} onSubmit={sendEmail} className="contact-form">
                 <label className="form-label">Name</label>
                 <input className="form-input"
                     type="text" 
