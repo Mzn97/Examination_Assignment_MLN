@@ -2,10 +2,8 @@ import React, { useState } from 'react'
 import '../style/CheckoutForm.css'
 import { useNavigate } from 'react-router-dom';
 import emailjs from 'emailjs-com';
-//import { withRouter } from 'react-router-dom';
 
 const Checkout = () => {
-
     
     // useState hook används för att hantera formulärdata.
     // Initierar en state-variabel 'formData' med ett objekt som innehåller tomma strängar för varje fält.
@@ -79,7 +77,7 @@ const Checkout = () => {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="Email Address"
-                    /* required */
+                    required
                 />
 
                 <input
@@ -88,7 +86,7 @@ const Checkout = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     placeholder="Phone Number"
-                    /* required */
+                    required
                 />
 
                 <h3>Delivery Address</h3>
@@ -98,7 +96,7 @@ const Checkout = () => {
                     value={formData.name}
                     onChange={handleChange}
                     placeholder="Full Name"
-                    /* required */
+                    required
                 />
 
                 <input
@@ -107,7 +105,7 @@ const Checkout = () => {
                     value={formData.address}
                     onChange={handleChange}
                     placeholder="Address"
-                    /* required */
+                    required
                 />
 
                 <input
@@ -116,7 +114,7 @@ const Checkout = () => {
                     value={formData.city}
                     onChange={handleChange}
                     placeholder="City"
-                    /* required */
+                    required
                 />
 
                 <input
@@ -125,7 +123,7 @@ const Checkout = () => {
                     value={formData.zip}
                     onChange={handleChange}
                     placeholder="Postal Code"
-                    /* required */
+                    required
                 />
 
                 <h3>Payment Information</h3>
@@ -135,7 +133,7 @@ const Checkout = () => {
                     value={formData.cardNumber}
                     onChange={handleChange}
                     placeholder="Card Number"
-                    /* required */
+                    required
                 />
 
                 <input
@@ -144,7 +142,7 @@ const Checkout = () => {
                     value={formData.expiryDate}
                     onChange={handleChange}
                     placeholder="Expiration Date MM/YY"
-                    /* required */
+                    required
                 />
 
                 <input
@@ -153,7 +151,7 @@ const Checkout = () => {
                     value={formData.cvv}
                     onChange={handleChange}
                     placeholder="CVC/CVV"
-                    /* required */
+                    required
                 />
                 <button className='complete-purchase-btn' type="submit">Complete Purchase</button>
                 <a href="/ShoppingCart" className="back-btn">Back to Shopping Cart</a>
@@ -162,5 +160,4 @@ const Checkout = () => {
     )
 }
 
-//export default withRouter(Checkout);
 export default Checkout;

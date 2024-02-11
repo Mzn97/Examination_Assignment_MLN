@@ -50,7 +50,6 @@ const HamburgerMenu = () => {
                 <a href="/ProductShoes" className={styles.menuItem}>Shoes</a>
                 <a href="/ProductShirts" className={styles.menuItem}>Shirts</a>
                 <a href="/ProductFootballs" className={styles.menuItem}>Footballs</a>
-                {/* Ska andra läggas till eller tas bort????????? */}
                 <a href="/About" className={styles.menuItem}>About us</a>
             </div>
         </div>
