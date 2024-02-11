@@ -61,7 +61,7 @@
 
 .navbar-item{
     display: none;
-    position: relative; /* Denna är för att få notisen bredvid 'Shoppung Cart' */
+    position: relative; /* Denna är för att få notisen bredvid 'Shopping Cart' */
    
 }
 .navbar-cart{
@@ -75,6 +75,7 @@
 }
 
 @media (min-width: 768px) {
+
     .navbar-item, span.navbar-item,.navbar-cart {
         display: flex;
         font-size: 24px;
@@ -106,5 +107,11 @@
         justify-content: space-around;
         position: fixed;
         
+    }
+}
+
+@media (max-width: 768px) {
+    .cart-item-count {
+        display: inline-block; /* Visar ikonen på mindre skärmar. */
     }
 }

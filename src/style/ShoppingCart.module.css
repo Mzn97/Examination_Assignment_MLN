@@ -1,14 +1,14 @@
 .cart-container {
     position: relative;
-    margin-top: 100px;
+    margin-top: 85px;
 }
 .shopping-cart {
-    width: 85%;        
+    width: 85%;
     max-width: 800px;
     margin: auto;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border: 1px solid black; /* Linje runt hela kundvagnen */
+    border: 2px solid black; /* Linje runt hela kundvagnen */
     border-radius: 5px;
 }
 
@@ -54,7 +54,7 @@
     flex-direction: row;
     display: flex;
     align-items: center;
-    width: 50%
+    width: 50%;
 }
 
 .item-quantity button {
@@ -109,4 +109,23 @@
 
 .test-cart{
     margin-top: 6em;
+}
+
+@media (max-width: 768px) {
+
+    .cart-image img {
+    display: none;
+    }
+
+    .item-quantity {
+        margin-right: 10px;
+    }
+
+    .item-price {
+        margin-left: 5px;
+    }
+
+    .remove-icon {
+        margin-right: 100px;
+    }
 }

@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import CardImage from "../components/CardImage.jsx";
 import { FaTrash } from 'react-icons/fa'; // Importerar FaTrash - papperskorg/remove-knapp
 
-// import ShoppingCartImage from "../components/ShoppingCart.jsx";
 
 const ShoppingCart = ({cartItems, addItemToCart}) => {
     const cart = useContext(CartContext)
